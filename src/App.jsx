@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="relative">
       <h2 className="text-2xl text-center mb-4  text-[#e94d58]">
-        {visible ? 'Ааааа, ты мне тоже нравишься' : ' Я тебе нравлюсь?'}
+        {visible ? 'Ааааа, вы мне тоже нравитесть' : ' Я вам нравлюсь?'}
       </h2>
       <img className="m-auto" src={visible ? '/gif.webp' : '/gifyou.webp'} alt="gif" />
       {visible ? null : (
