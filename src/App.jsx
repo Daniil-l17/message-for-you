@@ -22,9 +22,9 @@ function App() {
         {visible ? 'Ааааа, ты мне тоже нравишься' : ' Я тебе нравлюсь?'}
       </h2>
       {visible ? (
-        <img loading="lazy" className="m-auto" src={'/gif.webp'} alt="gif" />
+        <img className="m-auto" src={'/gif.webp'} alt="gif" />
       ) : (
-        <img loading="lazy" className="m-auto" src={'/gifyou.webp'} alt="gif" />
+        <img className="m-auto" src={'/gifyou.webp'} alt="gif" />
       )}
       {visible ? null : (
         <>
