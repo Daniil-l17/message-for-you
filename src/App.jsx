@@ -21,11 +21,7 @@ function App() {
       <h2 className="text-2xl text-center mb-4  text-[#e94d58]">
         {visible ? 'Ааааа, ты мне тоже нравишься' : ' Я тебе нравлюсь?'}
       </h2>
-      {visible ? (
-        <img className="m-auto" src={'/gif.webp'} alt="gif" />
-      ) : (
-        <img className="m-auto" src={'/gifyou.webp'} alt="gif" />
-      )}
+      <img className="m-auto" src={visible ? '/gif.webp' : '/gifyou.webp'} alt="gif" />
       {visible ? null : (
         <>
           <div className="flex relative h-[100px] mt-14 justify-between items-center">
