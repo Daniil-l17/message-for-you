@@ -7,7 +7,6 @@ function App() {
     ref.current.addEventListener('mouseover', () => {
       const noBtnRect = ref.current.getBoundingClientRect();
       const maxX = window.innerWidth - noBtnRect.width;
-
       const maxY = window.innerHeight - noBtnRect.height;
       const randomX = Math.floor(Math.random() * maxX);
       const randomY = Math.floor(Math.random() * maxY);
@@ -22,12 +21,11 @@ function App() {
       <h2 className="text-2xl text-center mb-4  text-[#e94d58]">
         {visible ? 'Ааааа, ты мне тоже нравишься' : ' Я тебе нравлюсь?'}
       </h2>
-      <img
-        loading="lazy"
-        className="m-auto"
-        src={visible ? '/gif.webp' : '/gifyou.webp'}
-        alt="gif"
-      />
+      {visible ? (
+        <img loading="lazy" className="m-auto" src={'/gif.webp'} alt="gif" />
+      ) : (
+        <img loading="lazy" className="m-auto" src={'/gifyou.webp'} alt="gif" />
+      )}
       {visible ? null : (
         <>
           <div className="flex relative h-[100px] mt-14 justify-between items-center">
